@@ -13,18 +13,18 @@ log:
   max_backups: 7
 
 mysql:
-  host: 127.0.0.1
+  host: mysql830
   port: 3306
   user: root
-  password: ljk123456
+  password: "root1234"
   dbname: islet
   max_open_conns: 200
   max_idle_conns: 50
 
 redis:
-  host: 127.0.0.1
-  password: ljk123456
+  host: redis724
+  password: ""
   port: 6379
-  db: 1
+  db: 0
   pool_size: 100
 

@@ -3,18 +3,23 @@ package routers
 import (
 	"github.com/gin-gonic/gin"
 	"islet/controller"
+	"islet/logger"
 	"islet/middleware"
 	"net/http"
+	"time"
 )
 
 func SetupRouter() *gin.Engine {
 	// 使用自定义的中间件创建路由
-	//gin.SetMode(gin.DebugMode)
-	//r := gin.New()
-	//r.Use(logger.GinLogger(), logger.GinRecovery(true), middleware.RateLimitMiddleware(2*time.Second, 1))
+	gin.SetMode(gin.DebugMode)
+	r := gin.New()
+	r.Use(logger.GinLogger(), logger.GinRecovery(true))
+
+	// 使用令牌桶策略限流
+	r.Use(middleware.RateLimitMiddleware(2*time.Second, 1))
 
 	// 使用默认路由
-	r := gin.Default()
+	//r := gin.Default()
 
 	r.LoadHTMLFiles("./templates/index.html")
 	r.Static("/static", "./static")
@@ -34,6 +39,9 @@ func SetupRouter() *gin.Engine {
 
 	v1.GET("/refresh_token", controller.RefreshTokenHandler)
 
+	// 按照分数或时间查询帖子列表（从Redis缓存中获取）
+	v1.GET("/post2", controller.GetPostListHandler)
+
 	v1.Use(middleware.JWTAuthMiddleware())
 	{
 		// community related operation
@@ -46,9 +54,6 @@ func SetupRouter() *gin.Engine {
 
 		// 从MySQL中查询帖子列表，按照创建的时间顺序进行查询
 		v1.GET("/post", controller.PostListHandler)
-
-		// 按照分数或时间查询帖子列表（从Redis缓存中获取）
-		v1.GET("/post2", controller.GetPostListHandler)
 
 		v1.POST("/vote", controller.VoteHandler) // post vote
 	}

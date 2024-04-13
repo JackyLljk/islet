@@ -234,3 +234,28 @@
 {"level":"INFO","time":"2024-04-13T12:47:43.835+0800","caller":"redis/redis.go:42","msg":"redis init success"}
 {"level":"INFO","time":"2024-04-13T12:51:28.763+0800","caller":"logger/logger.go:48","msg":"init logger success"}
 {"level":"INFO","time":"2024-04-13T12:51:28.777+0800","caller":"redis/redis.go:42","msg":"redis init success"}
+{"level":"ERROR","time":"2024-04-13T13:05:00.531+0800","caller":"controller/user.go:57","msg":"mysql.Login() failed","error":"密码错误"}
+{"level":"INFO","time":"2024-04-13T13:08:28.159+0800","caller":"logger/logger.go:48","msg":"init logger success"}
+{"level":"INFO","time":"2024-04-13T13:08:28.165+0800","caller":"redis/redis.go:42","msg":"redis init success"}
+{"level":"INFO","time":"2024-04-13T13:10:06.292+0800","caller":"logger/logger.go:48","msg":"init logger success"}
+{"level":"INFO","time":"2024-04-13T13:10:06.299+0800","caller":"redis/redis.go:42","msg":"redis init success"}
+{"level":"INFO","time":"2024-04-13T13:10:12.279+0800","caller":"logger/logger.go:82","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36","errors":"","cost":0.000544667}
+{"level":"INFO","time":"2024-04-13T13:10:12.338+0800","caller":"logger/logger.go:82","msg":"/api/v1/posts2","status":200,"method":"GET","path":"/api/v1/posts2","query":"page=1&order=time","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36","errors":"","cost":0.000058584}
+{"level":"INFO","time":"2024-04-13T13:12:44.460+0800","caller":"logger/logger.go:48","msg":"init logger success"}
+{"level":"INFO","time":"2024-04-13T13:12:44.467+0800","caller":"redis/redis.go:42","msg":"redis init success"}
+{"level":"INFO","time":"2024-04-13T13:12:47.747+0800","caller":"logger/logger.go:82","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36","errors":"","cost":0.000544583}
+{"level":"INFO","time":"2024-04-13T13:12:47.845+0800","caller":"logger/logger.go:82","msg":"/api/v1/posts2","status":200,"method":"GET","path":"/api/v1/posts2","query":"page=1&order=time","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36","errors":"","cost":0.000005917}
+{"level":"INFO","time":"2024-04-13T13:32:58.092+0800","caller":"logger/logger.go:48","msg":"init logger success"}
+{"level":"INFO","time":"2024-04-13T13:32:58.100+0800","caller":"redis/redis.go:42","msg":"redis init success"}
+{"level":"INFO","time":"2024-04-13T13:33:05.614+0800","caller":"logger/logger.go:82","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36","errors":"","cost":0.001062042}
+{"level":"INFO","time":"2024-04-13T13:33:05.735+0800","caller":"logger/logger.go:82","msg":"/api/v1/posts2","status":200,"method":"GET","path":"/api/v1/posts2","query":"page=1&order=time","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36","errors":"","cost":0.000027708}
+{"level":"INFO","time":"2024-04-13T14:33:09.331+0800","caller":"logger/logger.go:48","msg":"init logger success"}
+{"level":"INFO","time":"2024-04-13T14:33:09.432+0800","caller":"redis/redis.go:42","msg":"redis init success"}
+{"level":"INFO","time":"2024-04-13T14:34:33.209+0800","caller":"logger/logger.go:48","msg":"init logger success"}
+{"level":"INFO","time":"2024-04-13T14:34:33.216+0800","caller":"mysql/mysql.go:36","msg":"mysql init success!"}
+{"level":"INFO","time":"2024-04-13T14:34:33.217+0800","caller":"redis/redis.go:42","msg":"redis init success"}
+{"level":"INFO","time":"2024-04-13T15:08:14.218+0800","caller":"logger/logger.go:48","msg":"init logger success"}
+{"level":"INFO","time":"2024-04-13T15:08:44.349+0800","caller":"logger/logger.go:48","msg":"init logger success"}
+{"level":"INFO","time":"2024-04-13T15:08:44.363+0800","caller":"mysql/mysql.go:36","msg":"mysql init success!"}
+{"level":"INFO","time":"2024-04-13T15:08:44.364+0800","caller":"redis/redis.go:42","msg":"redis init success"}
+{"level":"INFO","time":"2024-04-13T22:37:52.915+0800","caller":"logger/logger.go:48","msg":"init logger success"}

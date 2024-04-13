@@ -3,6 +3,7 @@ package mysql
 import (
 	"errors"
 	"fmt"
+	"go.uber.org/zap"
 	"islet/settings"
 
 	_ "github.com/go-sql-driver/mysql"
@@ -31,6 +32,8 @@ func Init(cfg *settings.MySQLConfig) (err error) {
 	}
 	db.SetMaxOpenConns(cfg.MaxOpenConns)
 	db.SetMaxIdleConns(cfg.MaxIdleConns)
+
+	zap.L().Info("mysql init success!")
 
 	return
 }
